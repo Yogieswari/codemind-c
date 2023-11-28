@@ -10,17 +10,17 @@ int main()
     }
     else if(units>=200 && units<400)
     {
-    unitcost=1.50;
+        unitcost=1.50;
     }
     else if(units>=400 && units<600)
     {
         unitcost=1.80;
     }
-    else
+    else if(units>=600)
     {
         unitcost=2.00;
     }
-    bill=units*unitcost;//400*1.80
+    bill=units*unitcost;
     if(bill>400)
     {
         tbill=bill+(bill*0.15);
@@ -29,6 +29,6 @@ int main()
     else
     {
         tbill=bill+100;
-    printf("%.2f",tbill);
+        printf("%.2f",tbill);
     }
 }
